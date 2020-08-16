@@ -35,9 +35,10 @@
   /*mine edit*/ margin: 20px auto;
   padding: 0 20px;
   box-sizing: border-box; 
-  border-style: solid;
-  border-radius: 40px;
-  /*mine edit*/ background-color: whitesmoke; }
+  border-top: solid;
+  /*border-left: solid;*/
+  /*border-radius: 40px;*/
+  /*mine edit*/ background-color: white; }
 .column,
 .columns {
   width: 100%;
@@ -129,7 +130,7 @@ body {
   font-weight: 400;
   font-family: 'Open Sans', sans-serif;
   color: #222;
- /*mine edit*/ background-color: honeydew; }
+ /*mine edit*/ background-color: whitesmoke; }
 
 
 /* Typography
@@ -376,14 +377,17 @@ form {
 
 /* mine utilities
 ___________________________________________________*/
-div.row { border-bottom: double; }
+div.row { border-bottom: dotted 2px; }
 div.row:last-of-type { border-bottom: none; }
-img { 
-  border-radius: 40px;
+.six img { 
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
-  border: solid; }
+  /*border-radius: 40px;*/
+  border-top: 3px solid; }
+  .row .seven {
+    margin-top: 30px }
+
 /*mine lists
 ___________________________________________________*/
  ul::first-line { font-size: 120%; font-weight: bolder; text-decoration: underline; }
