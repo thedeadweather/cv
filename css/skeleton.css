@@ -32,28 +32,34 @@
   position: relative;
   width: 100%;
   max-width: 960px;
-  /*mine edit*/ margin: 20px auto;
   padding: 0 20px;
   box-sizing: border-box; 
   border-top: solid;
   /*border-left: solid;*/
   /*border-radius: 40px;*/
-  /*mine edit*/ background-color: white; }
+  /*mine edit*/
+  margin: 20px auto;
+  background-color: white; }
 .column,
 .columns {
   width: 100%;
   float: left;
   box-sizing: border-box; }
 
-/* For devices larger than 400px */
-@media (min-width: 400px) {
+/* For screens less than 770px */
+@media (max-width: 770px) {
   .container {
     width: 85%;
-    padding: 0; }
+    padding: 0;  }
+  .four.columns     /*mine edit*/ { width: 100%; padding-left: 20px; font: 110% fantasy; color: #148f77; }
+  .five.columns                   { width: 39.3333333333%; }
+  .six.columns                    { width: 65.3333333333%%;            }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns    /*mine edit*/ { width: 100%;  padding-left: 20px; padding-right: 20px; }
 }
 
-/* For devices larger than 550px */
-@media (min-width: 550px) {
+/* For devices larger than 771px */
+@media (min-width: 771px) {
   .container {
     width: 80%; }
   .column,
@@ -67,11 +73,11 @@
   .one.columns                    { width: 4.66666666667%; }
   .two.columns                    { width: 13.3333333333%; }
   .three.columns                  { width: 22%;            }
-  .four.columns                   { width: 30.6666666667%; }
-  .five.columns     /*mine edit*/ { width: 39.3333333333%; padding-left: 20px; }
+  .four.columns     /*mine edit*/ { width: 30.6666666667%; padding-left: 20px; font: 110% fantasy; color: #148f77; }
+  .five.columns                   { width: 39.3333333333%; }
   .six.columns                    { width: 48%;            }
-  .seven.columns    /*mine edit*/ { width: 56.6666666667%; padding-right: 20px; }
-  .eight.columns                  { width: 65.3333333333%; }
+  .seven.columns                  { width: 56.6666666667%; }
+  .eight.columns    /*mine edit*/ { width: 65.3333333333%;  padding-left: 20px; padding-right: 20px; }
   .nine.columns                   { width: 74.0%;          }
   .ten.columns                    { width: 82.6666666667%; }
   .eleven.columns                 { width: 91.3333333333%; }
@@ -137,15 +143,16 @@ body {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
   font-weight: 300; }
 h2 { font-size: 3.6rem; line-height: 1.25; letter-spacing: -.1rem; }
 h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; }
-/* mine edit________________________________________*/
-h1 { padding-top: 55px; font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
+h1 { padding-top: 20px; font-size: 4.0rem; line-height: 1.2;  letter-spacing: -.1rem;}
 h4 { padding-top: 30px; font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; }
 h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
 h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
+/* mine edit________________________________________*/
+h1 + h4 { padding-top: 0; margin-bottom: 0; }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
@@ -373,7 +380,7 @@ form {
   width: 100%;
   box-sizing: border-box; }
 .u-max-full-width {
-  max-width: 50%;
+  max-width: 40%;
   box-sizing: border-box; }
 .u-pull-right {
   float: right; }
@@ -382,16 +389,19 @@ form {
 
 /* mine utilities
 ___________________________________________________*/
-div.row { border-bottom: dotted 2px; }
-div.row:last-of-type { border-bottom: none; }
 .six img { 
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  /*border-radius: 40px;*/
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 0px; 
+  vertical-align: bottom; }
+.row .eight {
+  margin-top: 30px }
+
+.eight .u-max-full-width { 
+  float: right;
+  margin-left: 5px;
   border-top: 3px solid; }
-  .row .seven {
-    margin-top: 30px }
 
 /*mine lists
 ___________________________________________________*/
